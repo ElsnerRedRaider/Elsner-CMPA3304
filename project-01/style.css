@@ -98,28 +98,23 @@ a {
 
 .main-nav a {
   font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
   color: var(--ink);
-  position: relative;
-  padding-bottom: 0.2rem;
+  display: inline-block;
+  background-color: var(--card-bg);
+  border: 1.5px solid var(--ink);
+  border-radius: 3px;
+  padding: 0.45rem 0.9rem;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
 }
 
-.main-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background-color: var(--brass);
-  transition: width var(--transition-fast);
-}
-
-.main-nav a:hover::after,
-.main-nav a:focus-visible::after {
-  width: 100%;
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 0 var(--brass);
+  border-color: var(--brass);
 }
 
 .main-nav a:focus-visible {
