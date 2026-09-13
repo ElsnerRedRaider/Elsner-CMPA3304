@@ -1,0 +1,171 @@
+:root {
+    --color-blue: royalblue;
+    --color-blue-dark: navy;
+    --color-green: forestgreen;
+    --color-purple: rebeccapurple;
+    --color-purple-dark: indigo;
+    --color-orange: chocolate;
+    --color-orange-dark: saddlebrown;
+    --color-pink: mediumvioletred;
+    --color-pink-dark: crimson;
+    --color-slate: darkslategray;
+    --color-slate-dark: dimgray;
+    --color-white: white;
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.5s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    line-height: 2;
+    background-color: whitesmoke;
+    color: darkslategray;
+    padding: 32px 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.button-section {
+    padding: 32px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.button-section p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+button {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+/* ---------- Button 01: Color Fade ---------- */
+.button-01 {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 16px 32px;
+    border: 2px solid var(--color-blue);
+    transition: background-color var(--transition-base), color var(--transition-base), border-color var(--transition-base);
+}
+
+.button-01:hover {
+    background-color: var(--color-white);
+    color: var(--color-blue);
+    border-color: var(--color-blue);
+}
+
+/* ---------- Button 02: Lift and Shadow ---------- */
+.button-02 {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 16px 32px;
+    border: 2px solid var(--color-green);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.button-02:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Button 03: Slide Reveal ---------- */
+.button-03 {
+    background-color: var(--color-purple);
+    color: var(--color-white);
+    padding: 16px 32px;
+    border: 2px solid var(--color-purple);
+    letter-spacing: 0px;
+    transition: letter-spacing var(--transition-slow), background-color var(--transition-slow), transform var(--transition-fast);
+}
+
+.button-03:hover {
+    letter-spacing: 3px;
+    background-color: var(--color-purple-dark);
+    transform: scale(1.03);
+}
+
+/* ---------- Button 04: Shadow Pop ---------- */
+.button-04 {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    padding: 16px 32px;
+    border: 2px solid var(--color-orange);
+    box-shadow: 0 0 0 rgba(194, 65, 12, 0);
+    transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.button-04:hover {
+    box-shadow: 0 0 24px rgba(210, 105, 30, 0.6);
+    transform: scale(1.05);
+}
+
+/* ---------- Button 05: Pill Morph ---------- */
+.button-05 {
+    background-color: var(--color-white);
+    color: var(--color-pink);
+    padding: 16px 32px;
+    border: 2px solid var(--color-pink);
+    border-radius: 0px;
+    transition: border-radius var(--transition-base), background-color var(--transition-base), color var(--transition-base);
+}
+
+.button-05:hover {
+    border-radius: 999px;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+}
+
+/* ---------- Button 06: Tilt and Glow ---------- */
+.button-06 {
+    background-color: var(--color-slate);
+    color: var(--color-white);
+    padding: 16px 32px;
+    border: 2px solid var(--color-slate);
+    transition: transform var(--transition-base), box-shadow var(--transition-base), background-color var(--transition-base);
+}
+
+.button-06:hover {
+    transform: rotate(-2deg) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    background-color: var(--color-slate-dark);
+}
