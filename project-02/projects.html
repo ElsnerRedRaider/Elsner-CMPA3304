@@ -3,22 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Larger web builds by Jake Elsner, including the Elsner App Development site and Right and Tight Plumbing.">
-  <title>Builds | Jake Elsner</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <meta name="description" content="Coursework and web builds by Jake Elsner.">
+  <title>Projects | Jake Elsner</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header>
     <div class="container">
       <a class="logo" href="index.html">Jake Elsner</a>
-      <nav class="site-nav" aria-label="Main navigation">
+      <nav aria-label="Main navigation">
         <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -26,87 +23,86 @@
   </header>
 
   <main class="container">
-    <section class="page-intro" aria-labelledby="builds-title">
-      <h1 id="builds-title">Builds</h1>
-      <p class="lead">Complete sites, from my first CMPA 3301 page to a site for a real business. Read top to bottom, they show how far the work has come.</p>
+    <section>
+      <h1>Projects</h1>
+      <p class="lead">Everything I've built so far, in the order I built it.</p>
+      <a class="button" href="#coursework">CMPA 3304 coursework</a>
+      <a class="button button-secondary" href="#summer">CMPA 3301 projects</a>
+      <a class="button button-secondary" href="#builds">Independent work</a>
     </section>
 
-    <article class="build" aria-labelledby="rt-title">
-      <a class="thumb-link" href="https://github.com/ElsnerRedRaider/Right-and-Tight">
-        <img src="images/right-and-tight-plumbing.jpg" alt="Right and Tight Plumbing homepage with a navy blueprint-grid background, a large logo headline, and a panel of service stats" width="800" height="500">
-      </a>
-      <div>
-        <p class="meta">Independent build, 2026</p>
-        <h2 id="rt-title">Right &amp; Tight Plumbing</h2>
-        <ul class="tags">
-          <li>HTML</li>
-          <li>CSS custom properties</li>
-          <li>Real client</li>
-        </ul>
-        <p>A website for Right &amp; Tight Plumbing, a business owned by a licensed master plumber. The blueprint-grid background and brass accents come from the trade itself, and the page covers services, stats, and a clear call to action.</p>
-        <a class="button" href="https://github.com/ElsnerRedRaider/Right-and-Tight">View the code</a>
-      </div>
-    </article>
+    <section id="coursework">
+      <h2>CMPA 3304, Early Fall 2026</h2>
+      <ul class="cards">
+        <li class="card">
+          <p class="label">Week 03, Exercise 01</p>
+          <h3><a href="https://elsnerredraider.github.io/Elsner-CMPA3304/week03-exercise01-boxmodelpractice/">Box model practice</a></h3>
+          <p>A short bio inside a box, used to practice how margin, border, and padding stack around content.</p>
+        </li>
+        <li class="card">
+          <p class="label">Week 04, Exercise 01</p>
+          <h3><a href="https://elsnerredraider.github.io/Elsner-CMPA3304/week04_exercise01/">Dev tools vandalism</a></h3>
+          <p>I edited a live website with browser developer tools and documented the changes.</p>
+        </li>
+        <li class="card">
+          <p class="label">Week 04, Exercise 02</p>
+          <h3><a href="https://elsnerredraider.github.io/Elsner-CMPA3304/week-04-exercise-02/">Responsive film collection</a></h3>
+          <p>A card grid of my favorite Kevin Smith films that rearranges from one column to three.</p>
+        </li>
+        <li class="card">
+          <p class="label">Week 05, Exercise 01</p>
+          <h3><a href="https://elsnerredraider.github.io/Elsner-CMPA3304/week05-exercise01/">Interactive buttons</a></h3>
+          <p>Six button styles, each with its own hover transition.</p>
+        </li>
+        <li class="card">
+          <p class="label">Week 06, Exercise 01</p>
+          <h3><a href="https://elsnerredraider.github.io/Elsner-CMPA3304/week-06-exercise-01/">Navigation lab</a></h3>
+          <p>A multi-page site where I fixed broken links and tried three navigation styles.</p>
+        </li>
+        <li class="card">
+          <p class="label">Assignment 01</p>
+          <h3><a href="https://elsnerredraider.github.io/Elsner-CMPA3304/assignment-01/">Top 5 anime</a></h3>
+          <p>A ranked list built with semantic HTML: an ordered list, headings, and short write-ups.</p>
+        </li>
+        <li class="card">
+          <p class="label">Project 01</p>
+          <h3><a href="https://elsnerredraider.github.io/Elsner-CMPA3304/project-01/">Personal landing page</a></h3>
+          <p>A single-page introduction whose placeholder navigation this portfolio completes.</p>
+        </li>
+      </ul>
+    </section>
 
-    <article class="build" aria-labelledby="eads-title">
-      <a class="thumb-link" href="https://elsnerredraider.github.io/Project03_ElsnerAppDevelopment/">
-        <img src="images/cmpa3301-project03-elsner-app.jpg" alt="Homepage of the Elsner App Development Services site, with the headline Software built to hold up when it matters most" width="800" height="500">
-      </a>
-      <div>
-        <p class="meta">CMPA 3301, Project 03 (final project)</p>
-        <h2 id="eads-title">Elsner App Development Services</h2>
-        <ul class="tags">
-          <li>Two pages</li>
-          <li>Shared stylesheet</li>
-          <li>Project management</li>
-        </ul>
-        <p>A two-page site for the software studio I plan to launch, featuring HomeProof, an AI-powered home inventory app. I managed the build with the framework from <cite>Project Management for the Unofficial Project Manager</cite> and documented every stage:</p>
-        <ul class="docs-list">
-          <li><a href="https://github.com/ElsnerRedRaider/Project03_ElsnerAppDevelopment/blob/main/docs/scope.md">Scope statement</a>: what the project is and isn't</li>
-          <li><a href="https://github.com/ElsnerRedRaider/Project03_ElsnerAppDevelopment/blob/main/docs/plan.md">Plan</a>: TAME risk analysis and work breakdown structure</li>
-          <li><a href="https://github.com/ElsnerRedRaider/Project03_ElsnerAppDevelopment/blob/main/docs/retrospective.md">Retrospective</a>: what went well and what I'd change</li>
-        </ul>
-        <a class="button" href="https://elsnerredraider.github.io/Project03_ElsnerAppDevelopment/">Visit the live site</a>
-        <a class="button button-secondary" href="https://github.com/ElsnerRedRaider/Project03_ElsnerAppDevelopment">View the code</a>
-      </div>
-    </article>
+    <section id="summer">
+      <h2>CMPA 3301, Summer 2026</h2>
+      <ul class="cards">
+        <li class="card">
+          <p class="label">Project 02</p>
+          <h3><a href="https://elsnerredraider.github.io/JakeElsner_Project02/">Introduction page with navigation</a></h3>
+          <p>My first page with an external stylesheet, a navigation bar, and a styled box.</p>
+        </li>
+        <li class="card">
+          <p class="label">Project 03, final project</p>
+          <h3><a href="https://elsnerredraider.github.io/Project03_ElsnerAppDevelopment/">Elsner App Development Services</a></h3>
+          <p>A two-page site for my future software studio, planned with a scope statement, risk analysis, and retrospective.</p>
+        </li>
+      </ul>
+    </section>
 
-    <article class="build" aria-labelledby="p2-title">
-      <a class="thumb-link" href="https://elsnerredraider.github.io/JakeElsner_Project02/">
-        <img src="images/cmpa3301-project02-intro-nav.jpg" alt="Introduction webpage with a black background, green text, a top navigation bar, and a green bordered box" width="800" height="500">
-      </a>
-      <div>
-        <p class="meta">CMPA 3301, Project 02</p>
-        <h2 id="p2-title">Introduction page with navigation</h2>
-        <ul class="tags">
-          <li>External stylesheet</li>
-          <li>Navigation</li>
-        </ul>
-        <p>My first page with a separate style.css, a navigation bar, a contact section, and the box I styled in Assignment 02.</p>
-        <a class="button" href="https://elsnerredraider.github.io/JakeElsner_Project02/">Visit the live site</a>
-        <a class="button button-secondary" href="https://github.com/ElsnerRedRaider/JakeElsner_Project02">View the code</a>
-      </div>
-    </article>
-
-    <article class="build" aria-labelledby="p1-title">
-      <a class="thumb-link" href="https://github.com/ElsnerRedRaider/CMPA3301_Project01_JakeElsner">
-        <img src="images/cmpa3301-project01-intro.jpg" alt="A plain, unstyled webpage with the heading Greetings, I'm Jake Elsner and a bulleted list of hobbies" width="800" height="500">
-      </a>
-      <div>
-        <p class="meta">CMPA 3301, Project 01</p>
-        <h2 id="p1-title">My first webpage</h2>
-        <ul class="tags">
-          <li>HTML only</li>
-        </ul>
-        <p>Where it all started: plain HTML with a heading, a paragraph, a list of hobbies, and a link. No CSS yet.</p>
-        <a class="button" href="https://github.com/ElsnerRedRaider/CMPA3301_Project01_JakeElsner">View the code</a>
-      </div>
-    </article>
+    <section id="builds">
+      <h2>Independent work</h2>
+      <ul class="cards">
+        <li class="card">
+          <p class="label">Client site</p>
+          <h3><a href="https://elsnerredraider.github.io/Right-and-Tight/">Right &amp; Tight Plumbing</a></h3>
+          <p>A website for a business owned by a licensed master plumber, covering services and a clear way to call.</p>
+        </li>
+      </ul>
+    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <div class="container">
-      <p>&copy; 2026 Jake Elsner. CMPA 3304 <a href="../index.html">Back to my course homepage</a></p>
+      <p>&copy; 2026 Jake Elsner. CMPA 3304 <a href="https://elsnerredraider.github.io/Elsner-CMPA3304/">Back to my course homepage</a></p>
     </div>
   </footer>
 </body>
