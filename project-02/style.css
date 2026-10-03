@@ -139,8 +139,8 @@ section {
   background: transparent;
 }
 
-.button + .button {
-  margin-left: 0.5rem;
+.button {
+  margin: 0 0.5rem 0.5rem 0;
 }
 
 .button:hover,
@@ -193,6 +193,67 @@ section {
   padding-left: 1.2rem;
 }
 
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.contact-list a {
+  display: block;
+  height: 100%;
+  padding: 1.25rem;
+  background: #FFFFFF;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--sage);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform var(--speed) ease, border-color var(--speed) ease;
+}
+
+.contact-list a:hover,
+.contact-list a:focus-visible {
+  transform: translateY(-3px);
+  border-left-color: var(--amber);
+}
+
+.contact-list strong {
+  display: block;
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact-list span {
+  display: block;
+}
+
+.contact-note {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.contact-panel {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 2rem 1.5rem;
+  border-radius: 6px;
+}
+
+.contact-panel .button-secondary {
+  border-color: var(--paper);
+  color: var(--paper);
+}
+
+.contact-panel .button:hover,
+.contact-panel .button:focus-visible {
+  background: var(--paper);
+  color: var(--ink);
+}
+
 footer {
   border-top: 1px solid var(--line);
   padding: 1.5rem 0;
@@ -212,7 +273,8 @@ footer p {
   }
 
   .cards,
-  .skills {
+  .skills,
+  .contact-list {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -223,7 +285,8 @@ footer p {
   }
 
   .cards,
-  .skills {
+  .skills,
+  .contact-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
